@@ -4,7 +4,7 @@
 
     <groupId>com.messapix.ftatr.jfxmobile</groupId>
     <artifactId>jfxmobile-archetype</artifactId>
-    <version>1.0.0-b1-SNAPSHOT</version>
+    <version>1.0.0-b1</version>
     <packaging>maven-archetype</packaging>
 
     <name>jfxmobile archetype</name>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>${groupId}</groupId>
+    <artifactId>${artifactId}</artifactId>
+    <version>${version}</version>
+    
+    <name>${project_name}</name>
+    
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.messapix.ftatr.jfxmobile</groupId>
+                <artifactId>jfxmobile-maven-plugin</artifactId>
+                <version>1.0.0-b1</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <mainClass>${package}.App</mainClass>
+                    <android>
+                        <applicationPackage>${package}</applicationPackage>
+                        
+                        <!-- Android configuration here -->
+                    </android>
+                    
+                    <desktop>
+                        <!-- Desktop configuration here -->
+                    </desktop>
+                    
+                    <ios>
+                        <!-- iOS configuration here -->
+                    </ios>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
